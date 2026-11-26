@@ -2,9 +2,9 @@
 
 A product user research work sample for investigating the path from sign-up to a first successful API call. A portfolio project by Shivangi Priya.
 
-Interactive version: https://developer-journey-research-lab.netlify.app/
+Current interactive version with sourced documentation observation: https://shivangipriya.github.io/developer-journey-research-lab/
 
-Original workbench remains at https://shivangipriya.github.io/developer-journey-research-lab/
+Earlier interactive version, without the later documentation observation, remains at https://developer-journey-research-lab.netlify.app/
 
 ## The idea
 
@@ -41,7 +41,7 @@ No backend, analytics, cookies, external fonts, authentication, key input or Sar
 
 ## Implementation
 
-React + strict TypeScript + Vite. Core funnel, validation, summary and export logic live in `src/core.ts`; interface in `src/main.tsx`; styles in `src/style.css`. Static output uses relative paths for independent hosting. The original workbench deployment build remains in docs/. The interactive Netlify version is built from current src/. GitHub Pages can serve main /docs. Rebuild with npm run build, then replace docs/ with the contents of dist/. No paid services or API credits are needed.
+React + strict TypeScript + Vite. Core funnel, validation, summary and export logic live in `src/core.ts`; interface in `src/main.tsx`; styles in `src/style.css`. Static output uses relative paths for independent hosting. The current GitHub Pages deployment build is in docs/. The source in src/ includes the interactive story and separate dated documentation observation. Netlify retains the earlier interactive version. GitHub Pages can serve main /docs. Rebuild with npm run build, then replace docs/ with the contents of dist/. The current Pages deployment uses versioned links to its existing asset filenames; the documentation screenshot is stored in docs/1-docs-retry-observation.png. No paid services or API credits are needed.
 
 ```
 npm ci
@@ -73,3 +73,7 @@ Run a consented, moderated study with first-time API users and experienced build
 ## License
 
 MIT License. Copyright (c) 2026 Shivangi Priya.
+
+## Dated documentation observation
+
+The current Pages version separately records a static inspection of the public error-recovery page on 26 November 2026. Its prose excludes seat-budget exhaustion from backoff while the Python retry helper checks HTTP status alone. This is a documentation-example consistency observation, not live API execution, a user finding or demonstrated product impact. The synthetic cohort remains separate. Official source: https://docs.sarvam.ai/api/getting-started/errors-troubleshooting#retry-with-exponential-backoff
