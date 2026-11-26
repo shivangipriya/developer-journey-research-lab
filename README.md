@@ -2,11 +2,17 @@
 
 A product user research work sample for investigating the path from sign-up to a first successful API call. A portfolio project by Shivangi Priya.
 
+Interactive version: https://developer-journey-research-lab.netlify.app/
+
+Original workbench remains at https://shivangipriya.github.io/developer-journey-research-lab/
+
 ## The idea
 
 A funnel can locate a gap. It cannot explain intent. This prototype connects an ordered synthetic funnel to session evidence, alternative explanations, neutral usability tasks and a research brief. It demonstrates how to approach a study, not the results of a completed study.
 
 ## Try the workflow
+
+Start with the guided story: choose one of three competing explanations, compare three synthetic cases and choose the next check. Consequences change with the selection; they are proposed research choices, not study results. Reset exploration resets story choices only, preserving custom evidence notes. Reload clears all in-memory changes, so export before leaving.
 
 1. Open Journey. Compare All sessions and First API project. Select First success.
 2. Inspect session evidence. Read the event note before making a claim.
@@ -35,7 +41,7 @@ No backend, analytics, cookies, external fonts, authentication, key input or Sar
 
 ## Implementation
 
-React + strict TypeScript + Vite. Core funnel, validation, summary and export logic live in `src/core.ts`; interface in `src/main.tsx`; styles in `src/style.css`. Static output uses relative paths for independent hosting. The checked deployment build is in docs/. GitHub Pages can serve main /docs. Rebuild with npm run build, then replace docs/ with the contents of dist/. No paid services or API credits are needed.
+React + strict TypeScript + Vite. Core funnel, validation, summary and export logic live in `src/core.ts`; interface in `src/main.tsx`; styles in `src/style.css`. Static output uses relative paths for independent hosting. The original workbench deployment build remains in docs/. The interactive Netlify version is built from current src/. GitHub Pages can serve main /docs. Rebuild with npm run build, then replace docs/ with the contents of dist/. No paid services or API credits are needed.
 
 ```
 npm ci
@@ -53,6 +59,12 @@ Checked 26 November 2026:
 - Error distinctions: https://docs.sarvam.ai/api/getting-started/errors-troubleshooting
 
 The error examples are for the model API path. The documentation distinguishes 403 invalid keys, 402 insufficient credits, and several 429 causes. Document AI can use 401 instead. This demo is not a comprehensive error simulator or a substitute for current official documentation.
+
+Method guidance, checked 26 November 2026:
+- Nielsen Norman Group, realistic neutral tasks and avoiding clues: https://www.nngroup.com/articles/test-tasks-quant-qualitative/
+- GOV.UK Service Manual, moderated observation, consent and task design: https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing
+
+These are method references, not endorsements or evidence that this prototype has been validated.
 
 ## Limitations and next research step
 
